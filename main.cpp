@@ -1,13 +1,13 @@
-#include <iostream>
-#include <string>	// Библиотека, позволяющая работать со строками языка C++
+п»ї#include <iostream>
+#include <string>	// Р‘РёР±Р»РёРѕС‚РµРєР°, РїРѕР·РІРѕР»СЏСЋС‰Р°СЏ СЂР°Р±РѕС‚Р°С‚СЊ СЃРѕ СЃС‚СЂРѕРєР°РјРё СЏР·С‹РєР° C++
 
 
 int main() {
 	setlocale(LC_ALL, "Russian");
 	int n;
 
-	// Строки из языка Си
-	/*char c_str[]{'H', 'e', 'l', 'l', 'o', '\0'}; // В конец добавляем нуль-терминатор
+	// РЎС‚СЂРѕРєРё РёР· СЏР·С‹РєР° РЎРё
+	/*char c_str[]{'H', 'e', 'l', 'l', 'o', '\0'}; // Р’ РєРѕРЅРµС† РґРѕР±Р°РІР»СЏРµРј РЅСѓР»СЊ-С‚РµСЂРјРёРЅР°С‚РѕСЂ
 	for (int i = 0; i < 5; i++)
 		std::cout << c_str[i];
 	std::cout << std::endl;
@@ -17,7 +17,7 @@ int main() {
 	char c_str2[]{ "Hello world!" };
 	std::cout << c_str2 << std::endl;*/
 
-	// Объекты string
+	// РћР±СЉРµРєС‚С‹ string
 	/*std::string new_str;
 	std::cout << new_str << std::endl;
 	new_str = "Hello World!";
@@ -25,73 +25,73 @@ int main() {
 	new_str = "Bye World!";
 	std::cout << new_str << std::endl;
 
-	// Конкатенация строк
+	// РљРѕРЅРєР°С‚РµРЅР°С†РёСЏ СЃС‚СЂРѕРє
 	new_str = new_str + " (C) student";	
 	new_str += "!!!";
 	std::cout << new_str << std::endl;*/
 
 
-	// Ввод строки
-	/*std::cout << "Привет! Какое твоё имя?\nВвод -> ";
+	// Р’РІРѕРґ СЃС‚СЂРѕРєРё
+	/*std::cout << "РџСЂРёРІРµС‚! РљР°РєРѕРµ С‚РІРѕС‘ РёРјСЏ?\nР’РІРѕРґ -> ";
 	std::string name;
 	std::cin >> name;
-	std::cout << "Привет, " << name << "!\n";
-	std::cout << "Кем ты работаешь?\nВвод -> ";
+	std::cout << "РџСЂРёРІРµС‚, " << name << "!\n";
+	std::cout << "РљРµРј С‚С‹ СЂР°Р±РѕС‚Р°РµС€СЊ?\nР’РІРѕРґ -> ";
 	std::string job;
-	std::cin.ignore();	// Перед getline(), если до этого использовался ввод через cin
+	std::cin.ignore();	// РџРµСЂРµРґ getline(), РµСЃР»Рё РґРѕ СЌС‚РѕРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°Р»СЃСЏ РІРІРѕРґ С‡РµСЂРµР· cin
 	std::getline(std::cin, job);
-	std::cout << "Ого, " << job << "? Круто!\n";
-	std::cout << "А сколько тебе лет?\nВвод -> ";
+	std::cout << "РћРіРѕ, " << job << "? РљСЂСѓС‚Рѕ!\n";
+	std::cout << "Рђ СЃРєРѕР»СЊРєРѕ С‚РµР±Рµ Р»РµС‚?\nР’РІРѕРґ -> ";
 	int age;
 	std::cin >> age;
-	std::cout << "Когда-то и мне было " << age << " лет...\n";*/
+	std::cout << "РљРѕРіРґР°-С‚Рѕ Рё РјРЅРµ Р±С‹Р»Рѕ " << age << " Р»РµС‚...\n";*/
 
-	// Методы строк
+	// РњРµС‚РѕРґС‹ СЃС‚СЂРѕРє
 	/*std::string str = "Hello world!";
 
-	// Методы length и size, возвращающие длину строки
+	// РњРµС‚РѕРґС‹ length Рё size, РІРѕР·РІСЂР°С‰Р°СЋС‰РёРµ РґР»РёРЅСѓ СЃС‚СЂРѕРєРё
 	//std::cout << str.size() << std::endl;
 	//std::cout << str.length() << std::endl;
 
-	// Метод insert, вставляющий подстроку в строку
+	// РњРµС‚РѕРґ insert, РІСЃС‚Р°РІР»СЏСЋС‰РёР№ РїРѕРґСЃС‚СЂРѕРєСѓ РІ СЃС‚СЂРѕРєСѓ
 	//str.insert(3, "OOOOOO");
 	//std::cout << str << std::endl;
 	
-	// Метод replace, заменяющий часть строки
+	// РњРµС‚РѕРґ replace, Р·Р°РјРµРЅСЏСЋС‰РёР№ С‡Р°СЃС‚СЊ СЃС‚СЂРѕРєРё
 	//str.replace(3, 5, "OOO");
 	//std::cout << str << std::endl;
 
-	// Метод find, возвращающий позицию первого вхождения подстроки в строку
+	// РњРµС‚РѕРґ find, РІРѕР·РІСЂР°С‰Р°СЋС‰РёР№ РїРѕР·РёС†РёСЋ РїРµСЂРІРѕРіРѕ РІС…РѕР¶РґРµРЅРёСЏ РїРѕРґСЃС‚СЂРѕРєРё РІ СЃС‚СЂРѕРєСѓ
 	//std::cout << str.find('l') << std::endl;		// 2
 	//std::cout << str.find('l', 6) << std::endl;	// 9
 
-	// Метод rfind, возвращающий позицию последнего вхождения подстроки в строку
+	// РњРµС‚РѕРґ rfind, РІРѕР·РІСЂР°С‰Р°СЋС‰РёР№ РїРѕР·РёС†РёСЋ РїРѕСЃР»РµРґРЅРµРіРѕ РІС…РѕР¶РґРµРЅРёСЏ РїРѕРґСЃС‚СЂРѕРєРё РІ СЃС‚СЂРѕРєСѓ
 	//std::cout << str.rfind('o') << std::endl;		// 7
 	//std::cout << str.rfind('o', 6) << std::endl;	// 4
 	//std::cout << str.rfind("wo") << std::endl;	// 6
 
-	// Метод substr, возвращающий подстроку из строки
+	// РњРµС‚РѕРґ substr, РІРѕР·РІСЂР°С‰Р°СЋС‰РёР№ РїРѕРґСЃС‚СЂРѕРєСѓ РёР· СЃС‚СЂРѕРєРё
 	//std::cout << str.substr(3) << std::endl;
 	//std::cout << str.substr(3, 5) << std::endl;*/
 
-	// Функции для работы со строками
+	// Р¤СѓРЅРєС†РёРё РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃС‚СЂРѕРєР°РјРё
 	n = 123;
 	std::string num_str = std::to_string(n);
 	num_str += "!";
 	std::cout << num_str << std::endl;	// 123!
 	
-	std::cout << "Введите число -> ";
+	std::cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ -> ";
 	std::getline(std::cin, num_str);
 	n = std::stoi(num_str);
 	std::cout << ++n << std::endl;
 
 	std::string hello = "HelLo";
-	// Возведение в нижний регистр
+	// Р’РѕР·РІРµРґРµРЅРёРµ РІ РЅРёР¶РЅРёР№ СЂРµРіРёСЃС‚СЂ
 	for (int i = 0; i < hello.length(); i++)
 		hello[i] = std::tolower(hello[i]);
 	std::cout << hello << std::endl;
 
-	// Возведение в верхний регистр
+	// Р’РѕР·РІРµРґРµРЅРёРµ РІ РІРµСЂС…РЅРёР№ СЂРµРіРёСЃС‚СЂ
 	for (int i = 0; i < hello.length(); i++)
 		hello[i] = std::toupper(hello[i]);
 	std::cout << hello << std::endl;
